@@ -1,7 +1,7 @@
 object Main extends App {
   //1
 
-  def partApply(f: (Int, Int) => Int, x: Int): Int => Int = ???
+  def partApply(f: (Int, Int) => Int, x: Int): Int => Int = f(_, x)
 
   //2
   def f(x: Int): Double = x.toDouble
@@ -10,6 +10,7 @@ object Main extends App {
 
   //3
   def curry(f: (Int,  Double) => String): Int => Double => String = f.curried
+
 
 }
 
